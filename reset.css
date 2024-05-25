@@ -1,4 +1,3 @@
-/* css reset */
 /* Box sizing rules */
 *,
 *::before,
@@ -71,15 +70,4 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
-}
-
-/* end css reset*/
-
-.attribution { 
-  font-size: 11px; 
-  text-align: center; 
-}
-
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
 }
