@@ -108,6 +108,10 @@ button {
   font-weight: 700;
 }
 
+button:hover {
+  background-color: hsl(158, 38%, 14%);
+}
+
 @media (max-width: 767px) {
   .card {
     flex-direction: column;
