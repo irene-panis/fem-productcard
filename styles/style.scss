@@ -20,6 +20,8 @@ body {
   background-color: $cream;
   @include center-items;
   flex-direction: column;
+  font-size: 14px;
+  padding: 1rem;
 }
 
 main {
@@ -29,7 +31,7 @@ main {
 
 .card {
   background-color: $white;
-  border-radius: 15px;
+  border-radius: 12px;
   display: flex;
   max-width: 36rem;
 }
@@ -43,11 +45,12 @@ picture,
 .product-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
 }
 
 img {
-  border-radius: 15px 0 0 15px;
+  border-radius: 12px 0 0 12px;
 }
 
 .product-info {
@@ -57,11 +60,6 @@ img {
 .item-type {
   text-transform: uppercase;
   letter-spacing: .2rem;
-}
-
-.item-type,
-.description {
-  font-size: 0.8em;
 }
 
 .item-type,
@@ -90,6 +88,7 @@ h1,
 
 .old-price {
   text-decoration: line-through;
+  font-size: 0.9em;
 }
 
 .current-price {
@@ -98,13 +97,26 @@ h1,
 
 button {
   @include center-items;
-  gap: 1rem;
+  gap: 0.5rem;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 12px;
   padding: 1rem 0;
   border: none;
   background-color: $darkcyan;
   font-family: "Montserrat", sans-serif;
   color: $white;
   font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .card {
+    flex-direction: column;
+  }
+  picture,
+  .product-info {
+  max-width: 100%;
+  }
+  img {
+    border-radius: 12px 12px 0 0;
+  }
 }
